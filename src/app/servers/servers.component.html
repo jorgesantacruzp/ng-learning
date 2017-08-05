@@ -11,9 +11,5 @@
         [disabled]="!allowNewServer"
         (click)="onCreateServer()">Add Server
 </button>
-<p *ngIf="serverCreated; else noServer">{{ serverWasCreated }}</p>
-<ng-template #noServer>
-  <p>No server was created!</p>
-</ng-template>
-<app-server></app-server>
-<app-server></app-server>
+<p *ngIf="serverCreated">{{ serverWasCreated }}</p>
+<app-server *ngFor="let server of servers"></app-server>
