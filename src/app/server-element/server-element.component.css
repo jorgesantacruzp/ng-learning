@@ -1,3 +1,7 @@
 p {
   color: #009900;
 }
+
+label {
+  color: red;
+}
