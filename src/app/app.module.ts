@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { CockpitComponent } from './cockpit/cockpit.component';
 import { ServerElementComponent } from './server-element/server-element.component';
 import { BasicHighlightDirective } from "./basic-highlight/basic-highlight.directive";
+import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { BasicHighlightDirective } from "./basic-highlight/basic-highlight.direc
     ServersComponent,
     CockpitComponent,
     ServerElementComponent,
-    BasicHighlightDirective
+    BasicHighlightDirective,
+    BetterHighlightDirective
   ],
   imports: [
     BrowserModule,
