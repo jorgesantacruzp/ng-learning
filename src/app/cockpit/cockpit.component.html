@@ -2,8 +2,11 @@
   <div class="col-xs-12">
     <p appBasicHighlight>Add new Servers or blueprints!</p>
     <p [appBetterHighlight]="'green'" [defaultColor]="'yellow'">I'm using a better directive!</p>
-    <div *appUnless="false">
-      <p> This is a test of my custom structural directive</p>
+    <p *appUnless="false"> This is a test of my custom structural directive</p>
+    <div [ngSwitch]="value">
+      <p *ngSwitchCase="10">Value is 10</p>
+      <p *ngSwitchCase="100">Value is 100</p>
+      <p *ngSwitchDefault>Default</p>
     </div>
     <label>Server Name</label>
     <input

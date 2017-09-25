@@ -8,6 +8,7 @@ import {Component, OnInit, EventEmitter, Output, ViewChild, ElementRef} from '@a
 export class CockpitComponent implements OnInit {
   @Output() serverCreated = new EventEmitter<{serverName: string, serverContent: string}>();
   @Output('bpCreated') blueprintCreated = new EventEmitter<{serverName: string, serverContent: string}>();
+  value = 100;
 
   @ViewChild('serverContentInput') serverContentInput: ElementRef;
 
