@@ -12,6 +12,9 @@ import { BasicHighlightDirective } from "./directives/attribute/basic-highlight/
 import { BetterHighlightDirective } from './directives/attribute/better-highlight/better-highlight.directive';
 import { UnlessDirective } from './directives/structural/unless/unless.directive';
 import { HeaderComponent } from './header/header.component';
+import { UsersComponent } from './users/users.component';
+import { AccountComponent } from './users/account/account.component';
+import { NewAccountComponent } from './users/new-account/new-account.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { HeaderComponent } from './header/header.component';
     BasicHighlightDirective,
     BetterHighlightDirective,
     UnlessDirective,
-    HeaderComponent
+    HeaderComponent,
+    UsersComponent,
+    AccountComponent,
+    NewAccountComponent
   ],
   imports: [
     BrowserModule,
