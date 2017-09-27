@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   serverElements = [{type:'server', name:'testserver', content: 'just a test'}];
+  loadedFeature = 'server';
+
+  onNavigate(feature: string) {
+    this.loadedFeature = feature;
+  }
 
   onServerAdded(serverData: {serverName: string, serverContent: string}) {
     this.serverElements.push({

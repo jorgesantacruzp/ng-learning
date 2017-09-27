@@ -11,6 +11,7 @@ import { ServerElementComponent } from './server-element/server-element.componen
 import { BasicHighlightDirective } from "./directives/attribute/basic-highlight/basic-highlight.directive";
 import { BetterHighlightDirective } from './directives/attribute/better-highlight/better-highlight.directive';
 import { UnlessDirective } from './directives/structural/unless/unless.directive';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { UnlessDirective } from './directives/structural/unless/unless.directive
     ServerElementComponent,
     BasicHighlightDirective,
     BetterHighlightDirective,
-    UnlessDirective
+    UnlessDirective,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
