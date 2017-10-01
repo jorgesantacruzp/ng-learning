@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   serverElements = [{type:'server', name:'testserver', content: 'just a test'}];
-  loadedFeature = 'server';
+  loadedFeature = 'users';
 
   onNavigate(feature: string) {
     this.loadedFeature = feature;
