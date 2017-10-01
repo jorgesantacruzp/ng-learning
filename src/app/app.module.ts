@@ -15,6 +15,8 @@ import { HeaderComponent } from './header/header.component';
 import { UsersComponent } from './users/users.component';
 import { AccountComponent } from './users/account/account.component';
 import { NewAccountComponent } from './users/new-account/new-account.component';
+import {AccountsService} from "./services/accounts.service";
+import {LoggingService} from "./services/logging.service";
 
 @NgModule({
   declarations: [
@@ -35,7 +37,7 @@ import { NewAccountComponent } from './users/new-account/new-account.component';
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AccountsService, LoggingService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
